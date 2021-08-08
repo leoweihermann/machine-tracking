@@ -1,5 +1,17 @@
 import React from 'react';
 
-const App: React.FC = () => <h1>MACHINE TRACKING</h1>;
+import Header from './components/Header';
+
+import MachineTracker from './pages/MachineTracker';
+
+import { GlobalStyle } from './styles/global';
+
+const App: React.FC = () => (
+  <>
+    <Header />
+    <MachineTracker />
+    <GlobalStyle />
+  </>
+);
 
 export default App;
